@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obsal</title>
+  <link rel="shortcut icon" href="./logo obsal.png">
+  <link rel="stylesheet" href="./styles2.css">
+  <link rel="html" href="./index.html">
+  <link rel="html" href="./FAQ.html">
+  <link rel="html" href="./Search.html">
+  
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <style>
+      a {
+          text-decoration: none;
+      }
+      a:hover {
+          text-decoration: underline;       
+      }
+  </style>
+<body>
+  <header class="header">
+    <a href="./index.html"><img class="logo" src="./logo obsal.png" alt="logo de la marque"></a>
+    <ol class="nav">
+      <li class="Magasin"><a href="./index.html#Magasin2">Magasin</a></li>
+      <li class="Collections">
+        <a href="">Nos collections ⌵</a>
+        <ul class="dropdown">
+          <li><a href="./page-collection.html">Origins</a></li>
+        </ul>
+      </li>
+      <li class="Marque"><a href="./index.html#marque">La marque</a></li>
+      <li class="FAQ"><a href="./FAQ.html">FAQ</a></li>
+    </ol>
+  </header>
+  <h1 class="Title">Obsal origins</h1>
+  <div class="Second">
+  <ol class="nameofproduct">
+    <li><a href="./Achat.html">Jean ORIGINS</a></li>
+    
+ 
+</ol>
+<ol class="price" id="marque">
+  <li class="price1">€64.99</li>
+
+</ol>
+</div>
+ 
+<div class="E-MAIL">
+  <p>NEWSLETTER WITH YOUR E-MAIL FOR NEXT DROP JUST HERE.</p>
+  <form
+  action="https://formspree.io/f/xjkyzdqw"
+  method="POST"
+>
+    <input type="email" name="email" placeholder="Votre E-MAIL" required>
+    <br>
+    <input type="submit" value="Envoyer">
+  </form>
+</div>
+
+<script>
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    form.innerHTML = '<p class="thank-you-message">Merci pour votre inscription ! Vous recevrez bientôt des nouvelles de nos prochaines collections.</p>';
+  });
+</script>
+</body>
+<footer class="footer">
+  <p class="copy">© 2025, Obsal</p>
+
+</footer>
+</html>

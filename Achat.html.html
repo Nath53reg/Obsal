@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obsal</title>
+  <link rel="shortcut icon" href="./logo obsal.png">
+  <link rel="stylesheet" href="./styles5.css">
+</head>
+<body>
+  <header class="header">
+    <a href="./index.html"><img class="logo" src="./logo obsal.png" alt="logo de la marque"></a>
+    <ol class="nav">
+      <li class="Magasin"><a href="./index.html#Magasin2">Magasin</a></li>
+      <li class="Collections">
+        <a href="">Nos collections ⌵</a>
+        <ul class="dropdown">
+          <li><a href="./page-collection.html">Origins</a></li>
+        </ul>
+      </li>
+      <li class="Marque"><a href="./index.html#marque">La marque</a></li>
+      <li class="FAQ"><a href="./FAQ.html">FAQ</a></li>
+    </ol>
+  </header>
+
+  <div class="Page"></div>
+
+  <h1 class="Title">
+    Jean ORIGINS
+  </h1>
+  <h3 class="Price">
+    €64.99 EUR
+  </h3>
+
+  <select id="Taille" class="Size2">
+    <option disabled selected>Tailles disponibles</option>
+    <option disabled selected value="XS">XS</option>
+    <option value="S">S</option>
+    <option disabled selected value="M">M</option>
+    <option disabled selected value="L">L</option>
+  </select>
+
+  <br>
+  <button type="button" class="Button"> Acheter</button>
+
+  <div class="section">
+    <h3 class="toggle">Description</h3>
+    <div class="content">
+      <p>Jean Denim, logo brodé once 14 baggy</p>
+      <hr>
+    </div>
+    <h3 class="toggle">Livraison</h3>
+    <div class="content">
+      <p>Livraison à domicile ou en point relais</p>
+      <hr>
+    </div>
+    <h3 class="toggle">Retour</h3>
+    <div class="content">
+      <p>Conditions de retour.</p>
+      <hr>
+    </div>
+  </div>
+
+
+  <div class="E-MAIL">
+    <p>NEWSLETTER WITH YOUR E-MAIL FOR NEXT DROP JUST HERE.</p>
+    <form
+  action="https://formspree.io/f/xjkyzdqw"
+  method="POST"
+>
+      <input type="email" name="email" placeholder="Votre E-MAIL" required>
+      <br>
+      <input type="submit" value="Envoyer">
+    </form>
+  </div>
+  
+  <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      form.innerHTML = '<p class="thank-you-message">Merci pour votre inscription ! Vous recevrez bientôt des nouvelles de nos prochaines collections.</p>';
+    });
+  </script>
+
+  <footer class="footer">
+    <p class="copy">© 2025, Obsal</p>
+  </footer>
+  <script>
+    document.querySelectorAll('.toggle').forEach(titre => {
+      titre.addEventListener('click', () => {
+        const content = titre.nextElementSibling;
+        content.classList.toggle('show');
+      });
+    });
+  </script>
+  
+</body>
+</html>
