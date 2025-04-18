@@ -1,223 +1,278 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-* {
-  font-family: Montserrat;
+*{
+    font-family: Montserrat;
 }
-
-body {
-  margin: 0 auto;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #464646;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-}
-
-.logo {
-  height: 100px;
-}
-
-.burger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-}
-
-.nav {
-  list-style: none;
-  display: flex;
-  color: white;
-  font-size: 20px;
-}
-
-.nav li {
-  margin: 0 15px;
-}
-
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
-
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Style pour la section "First" */
-.First {
-  height: 600px;
-  background-color: #919191;
+body{
+margin: 0 auto;
 }
-
-.Title {
-  position: absolute;
-  right: 250px;
-  top: 250px;
-  font-size: 65px;
-  font-weight: 50;
+.header{
+    position: fixed;
+    top: 0px;
+    width: 1350px;
+    padding: 3px;
+z-index: 1;
+     background-color: #464646;
+    height: 100px;
+}  
+.logo{
+height: 150px;
+position: absolute;
+left: 40px;
+top: -20px;
 }
-
-.Title2 {
-  position: absolute;
-  right: 150px;
-  top: 500px;
-  font-size: 35px;
-  font-weight: 70;
-}
-
-.Second {
-  margin-left: 150px;
-  margin-right: 150px;
-  height: 550px;
-}
-
-.Pmagasin {
-  text-justify: auto;
-  font-size: 18px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.E-MAIL {
-  margin: 150px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.E-MAIL form {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  gap: 20px;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: #cfcece93;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(10, 10, 10, 0.1);
-}
-
-.E-MAIL input[type="email"],
-.E-MAIL input[type="submit"] {
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  width: 100%;
-  max-width: 300px;
-  transition: 0.3s;
-}
-
-.E-MAIL input[type="email"]:focus,
-.E-MAIL input[type="submit"]:hover {
-  border-color: #333;
-  background-color: #ffffff;
-}
-
-.E-MAIL input[type="submit"] {
-  background-color: #464646;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-.E-MAIL input[type="submit"]:hover {
-  background-color: #333;
-  transform: scale(1.05);
-}
-
-.E-MAIL input[type="submit"]:active {
-  transform: scale(0.98);
-}
-
-.thank-you-message {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: #5c5c5c;
-  text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
-  padding: 15px;
-  border-radius: 5px;
-}
-
-footer {
-  background-color: #464646;
-  height: 80px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.copy {
-  color: white;
-}
-
-/* Styles Responsives pour les petits écrans */
-@media screen and (max-width: 768px) {
-  .nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    background-color: #464646;
-    align-items: center;
-    width: 100%;
-  }
-
-  .nav.active {
+.nav{
+    list-style:none ;
     display: flex;
+   color: white;
+   font-size: 20px;
+}
+.Magasin{
+    position: absolute;
+    top: 40px;
+    left: 350px ;
+    font-size: 20px;  
+}
+.Collections {
+    position: absolute;
+    top: 40px;
+    left: 550px;
+    font-size: 20px;
   }
-
-  .nav li {
-    margin: 10px 0;
-    font-size: 18px;
+  
+  .Collections .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.856);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
   }
-
-  .burger {
+  
+  .Collections .dropdown li a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Collections .dropdown li a:hover {
+    background-color: #5555553f;
+  }
+  
+  .Collections:hover .dropdown {
     display: block;
   }
-
-  .First .Title {
-    font-size: 40px;
-    right: 20px;
-    top: 20px;
-  }
-
-  .First .Title2 {
+.Marque{
+    position: absolute;
+    top: 40px;
+    left: 800px ;
+    font-size: 20px;
+}
+.FAQ{
+    position: absolute;
+    top: 40px;
+    left: 1000px ;
+    font-size: 20px;
+}
+.recherche{
+height: 40px;
+position: absolute;
+top: 30px;
+right: 150px ;
+}
+.panier{
+    height: 40px;
+position: absolute;
+top: 30px;
+right: 45px ;
+}
+.First{
+ height: 600px;
+ background-color: #919191;
+}
+.Title{
+position: absolute;
+right: 250px;
+top: 250px;
+font-size: 65px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 50;
+}
+.Title2{
+    position: absolute;
+    right: 150px;
+    top: 500px;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 70;
+}
+.Aide{
+justify-content: center;
+font-size: 20px;
+color: white;
+}
+.Conditions{
+    position: absolute;
+    left: 245px;
+    bottom: 62px ;
+    font-size: 17px;
+    color: white;
+}
+.Politique1{
+    font-size: 17px;
+    color: white;
+}
+.Politique2{
+    position: absolute;
+    right: 245px;
+    bottom: 62px ;
+    font-size: 17px;
+    color: white;
+}
+.copy{
+   
+    position: absolute;
+    left: 630px;
+    bottom: 0px ;
+    color: white;
+}
+.Second{
+    margin-left: 150px;
+    margin-right: 150px;
+  height: 550px;
+}
+.Magasin2{
+   margin-top: -5px;
+   font-size: 28px;
+}
+.Pmagasin{
+text-justify: auto;
+font-size: 18px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin-left: 150px;
+    margin-right: 150px;
+}
+.nameofproduct{
+    list-style:none ;
+    display: flex;
+   font-size: 20px;
+   justify-content: space-between;
+   margin-top: 350px;
+}
+.price{
+    list-style:none ;
+    display: flex;
+}
+    
+.price1{
+    position: absolute;
+    
+    
+}
+.price2{
+    position: absolute;
+    left: 470px;
+}
+.price3{
+    position: absolute;
+    left: 750px;
+}
+.price4{
+    position: absolute;
+    left: 1030px;
+}
+.marque{
+    margin-top: -5px;
     font-size: 28px;
-    right: 20px;
-    top: 100px;
+}
+.E-MAIL {
+    margin: 150px;
+    font-size: 20px;
+    text-align: center;
   }
-
-  footer {
-    font-size: 14px;
-  }
-
+  
   .E-MAIL form {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #cfcece93;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.1);
   }
-
+  
   .E-MAIL input[type="email"],
   .E-MAIL input[type="submit"] {
-    max-width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    transition: 0.3s;
   }
+  
+  .E-MAIL input[type="email"]:focus,
+  .E-MAIL input[type="submit"]:hover {
+    border-color: #333;
+    background-color: #ffffff;
+  }
+  
+  .E-MAIL input[type="submit"] {
+    background-color: #464646;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 16px;
+  
+  }
+  
+  .E-MAIL input[type="submit"]:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  .E-MAIL input[type="submit"]:active {
+    transform: scale(0.98);
+  }
+  
+  .thank-you-message {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #5c5c5c;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold; 
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+footer{
+    background-color: #464646;
+    height: 80px;
+    position: relative;
 }
