@@ -11,28 +11,28 @@ a:hover {
 }
 
 body{
-margin: 0 auto;
+    margin: 0 auto;
 }
 .header{
     position: fixed;
     top: 0px;
     width: 1350px;
     padding: 3px;
-z-index: 1;
-     background-color: #464646;
+    z-index: 1;
+    background-color: #464646;
     height: 100px;
 }  
 .logo{
-height: 150px;
-position: absolute;
-left: 40px;
-top: -20px;
+    height: 150px;
+    position: absolute;
+    left: 40px;
+    top: -20px;
 }
 .nav{
-    list-style:none ;
+    list-style: none;
     display: flex;
-   color: white;
-   font-size: 20px;
+    color: white;
+    font-size: 20px;
 }
 .Magasin{
     position: absolute;
@@ -45,9 +45,8 @@ top: -20px;
     top: 40px;
     left: 550px;
     font-size: 20px;
-  }
-  
-  .Collections .dropdown {
+}
+.Collections .dropdown {
     display: none;
     position: absolute;
     top: 100%;
@@ -60,24 +59,21 @@ top: -20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     z-index: 10;
-  }
-  
-  .Collections .dropdown li a {
+}
+.Collections .dropdown li a {
     display: block;
     padding: 12px 16px;
     color: #333;
     text-decoration: none;
     font-size: 14px;
     transition: background-color 0.3s ease;
-  }
-  
-  .Collections .dropdown li a:hover {
+}
+.Collections .dropdown li a:hover {
     background-color: #5555553f;
-  }
-  
-  .Collections:hover .dropdown {
+}
+.Collections:hover .dropdown {
     display: block;
-  }
+}
 .Marque{
     position: absolute;
     top: 40px;
@@ -91,41 +87,41 @@ top: -20px;
     font-size: 20px;
 }
 .recherche{
-height: 40px;
-position: absolute;
-top: 30px;
-right: 150px ;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    right: 150px ;
 }
 .panier{
     height: 40px;
-position: absolute;
-top: 30px;
-right: 45px ;
+    position: absolute;
+    top: 30px;
+    right: 45px ;
 }
 .First{
- height: 600px;
- background-color: #919191;
+    height: 600px;
+    background-color: #919191;
 }
 .Title{
-position: absolute;
-right: 250px;
-top: 250px;
-font-size: 65px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 50;
+    position: absolute;
+    right: 250px;
+    top: 250px;
+    font-size: 65px;
+    font-family: system-ui, sans-serif;
+    font-weight: 50;
 }
 .Title2{
     position: absolute;
     right: 150px;
     top: 500px;
     font-size: 35px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, sans-serif;
     font-weight: 70;
 }
 .Aide{
-justify-content: center;
-font-size: 20px;
-color: white;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
 }
 .Conditions{
     position: absolute;
@@ -146,7 +142,6 @@ color: white;
     color: white;
 }
 .copy{
-   
     position: absolute;
     left: 630px;
     bottom: 0px ;
@@ -155,48 +150,35 @@ color: white;
 .Second{
     margin-left: 150px;
     margin-right: 150px;
-  height: 550px;
+    height: 550px;
 }
 .Magasin2{
-   margin-top: -5px;
-   font-size: 28px;
+    margin-top: -5px;
+    font-size: 28px;
 }
 .Pmagasin{
-text-justify: auto;
-font-size: 18px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-margin-left: 150px;
+    text-justify: auto;
+    font-size: 18px;
+    font-family: system-ui, sans-serif;
+    margin-left: 150px;
     margin-right: 150px;
 }
 .nameofproduct{
-    list-style:none ;
+    list-style: none;
     display: flex;
-   font-size: 20px;
-   justify-content: space-between;
-   margin-top: 350px;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-top: 350px;
 }
 .price{
-    list-style:none ;
+    list-style: none;
     display: flex;
 }
-    
-.price1{
-    position: absolute;
-    
-    
-}
-.price2{
-    position: absolute;
-    left: 470px;
-}
-.price3{
-    position: absolute;
-    left: 750px;
-}
-.price4{
-    position: absolute;
-    left: 1030px;
-}
+.price1{ position: absolute; }
+.price2{ position: absolute; left: 470px; }
+.price3{ position: absolute; left: 750px; }
+.price4{ position: absolute; left: 1030px; }
+
 .marque{
     margin-top: -5px;
     font-size: 28px;
@@ -205,9 +187,8 @@ margin-left: 150px;
     margin: 150px;
     font-size: 20px;
     text-align: center;
-  }
-  
-  .E-MAIL form {
+}
+.E-MAIL form {
     display: flex;
     flex-direction: row;
     align-items: left;
@@ -218,10 +199,9 @@ margin-left: 150px;
     background-color: #cfcece93;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(10, 10, 10, 0.1);
-  }
-  
-  .E-MAIL input[type="email"],
-  .E-MAIL input[type="submit"] {
+}
+.E-MAIL input[type="email"],
+.E-MAIL input[type="submit"] {
     padding: 12px;
     font-size: 16px;
     border-radius: 8px;
@@ -229,15 +209,13 @@ margin-left: 150px;
     width: 100%;
     max-width: 300px;
     transition: 0.3s;
-  }
-  
-  .E-MAIL input[type="email"]:focus,
-  .E-MAIL input[type="submit"]:hover {
+}
+.E-MAIL input[type="email"]:focus,
+.E-MAIL input[type="submit"]:hover {
     border-color: #333;
     background-color: #ffffff;
-  }
-  
-  .E-MAIL input[type="submit"] {
+}
+.E-MAIL input[type="submit"] {
     background-color: #464646;
     color: white;
     font-weight: bold;
@@ -248,19 +226,15 @@ margin-left: 150px;
     border-radius: 8px;
     text-transform: uppercase;
     font-size: 16px;
-  
-  }
-  
-  .E-MAIL input[type="submit"]:hover {
+}
+.E-MAIL input[type="submit"]:hover {
     background-color: #333;
     transform: scale(1.05);
-  }
-  
-  .E-MAIL input[type="submit"]:active {
+}
+.E-MAIL input[type="submit"]:active {
     transform: scale(0.98);
-  }
-  
-  .thank-you-message {
+}
+.thank-you-message {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #5c5c5c;
@@ -269,10 +243,92 @@ margin-left: 150px;
     font-weight: bold; 
     padding: 15px;
     border-radius: 5px;
-  }
-
+}
 footer{
     background-color: #464646;
     height: 80px;
     position: relative;
+}
+
+/* === Responsive Mobile + Menu Burger === */
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .logo {
+    position: static;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #464646;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 2;
+  }
+  .nav.active {
+    display: flex;
+  }
+  .nav li {
+    margin: 10px 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 3;
+  }
+  .burger div {
+    background-color: white;
+    height: 4px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 2px;
+  }
+  .Title, .Title2 {
+    position: static;
+    text-align: center;
+    font-size: 8vw;
+    padding: 10px;
+  }
+  .First {
+    height: auto;
+    padding: 40px 10px;
+  }
+  .Second, .Pmagasin {
+    margin: 0 20px;
+    text-align: center;
+  }
+  .nameofproduct {
+    flex-direction: column;
+    align-items: center;
+  }
+  .E-MAIL form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .copy {
+    position: static;
+  }
 }
