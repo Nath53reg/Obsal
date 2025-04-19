@@ -91,18 +91,7 @@ top: -20px;
     left: 1000px ;
     font-size: 20px;
 }
-.recherche{
-height: 40px;
-position: absolute;
-top: 30px;
-right: 150px ;
-}
-.panier{
-    height: 40px;
-position: absolute;
-top: 30px;
-right: 45px ;
-}
+
 .Title{
     margin-top: 200px;
     margin: 150px;

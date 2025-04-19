@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Obsal</title>
-  <link rel="shortcut icon" href="logo obsal.png">
-  <link rel="stylesheet" href="styles.css.css">
-  <link rel="html" href="index.html.html">
-  <link rel="html" href="FAQ.html.html">
-  <link rel="html" href="Achat.html.html">
+  <link rel="stylesheet" href="styles.css.css" />
+  <link rel="shortcut icon" href="logo obsal.png" />
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="header">
-    <a href="index.html.html"><img class="logo" src="logo obsal.png" alt="logo de la marque"></a>
-    
-    <!-- Menu burger -->
-    <div class="burger" onclick="document.querySelector('.nav').classList.toggle('active')">
-      <div></div>
-      <div></div>
-      <div></div>
+    <a href="index.html.html">
+      <img class="logo" src="logo obsal.png" alt="logo de la marque">
+    </a>
+
+    <!-- MENU BURGER -->
+    <div class="burger" onclick="toggleMenu()">
+      <div class="burger-bar"></div>
+      <div class="burger-bar"></div>
+      <div class="burger-bar"></div>
     </div>
 
+    <!-- NAVIGATION -->
     <ol class="nav">
       <li><a href="index.html.html#Magasin2" class="Magasin">Magasin</a></li>
       <li class="Collections">
@@ -34,12 +36,14 @@
     </ol>
   </header>
 
+  <!-- CONTENU PRINCIPAL -->
   <div class="First" id="First">
     <h1 class="Title">Dernier drop !</h1>
     <h2 class="Title2" id="Magasin2">Origins</h2>
   </div>
 
   <hr width="800" size="2" color="black">
+
   <center>
     <div class="Second">
       <h3>Magasin</h3>
@@ -52,22 +56,31 @@
     </div>
 
     <hr width="800" size="2" color="black">
-    <h3>La marque</h3>
 
+    <h3>La marque</h3>
     <p class="Pmagasin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque...</p>
   </center>
 
+  <!-- NEWSLETTER -->
   <div class="E-MAIL">
     <p>NEWSLETTER WITH YOUR E-MAIL FOR NEXT DROP JUST HERE.</p>
     <form action="https://formspree.io/f/xjkyzdqw" method="POST">
-      <input type="email" name="email" placeholder="Votre E-MAIL" required>
-      <br>
-      <input type="submit" value="Envoyer">
+      <input type="email" name="email" placeholder="Votre E-MAIL" required />
+      <input type="submit" value="Envoyer" />
     </form>
   </div>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p class="copy">© 2025, Obsal</p>
   </footer>
+
+  <!-- SCRIPT BURGER -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav').classList.toggle('active');
+    }
+  </script>
+
 </body>
 </html>
