@@ -21,8 +21,14 @@
       <li class="Marque"><a href="index.html.html#marque">La marque</a></li>
       <li class="FAQ"><a href="FAQ.html.html">FAQ</a></li>
     </ol>
+    <div class="burger" onclick="toggleMenu()">
+      <div class="burger-bar"></div>
+      <div class="burger-bar"></div>
+      <div class="burger-bar"></div>
+    </div>
   </header>
-
+  
+  
   <div class="Page"></div>
 
   <h1 class="Title">
@@ -93,6 +99,57 @@
       });
     });
   </script>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav').classList.toggle('active');
+    }
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      const collectionLink = document.querySelector('.Collections > a');
+      collectionLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('open');
+      });
+    });
+  </script>
+   <script>
+    function toggleMenu() {
+      document.querySelector('.nav').classList.toggle('active');
+    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Clic sur "Nos collections"
+      const collectionLink = document.querySelector('.Collections > a');
+      collectionLink.addEventListener('click', function(e) {
+        e.preventDefault();                   // empêche l’action par défaut du lien
+        this.parentElement.classList.toggle('open'); // Active/désactive le dropdown
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const collectionItem = document.querySelector('.Collections');
+      const collectionLink = collectionItem.querySelector('a');
+  
+      collectionLink.addEventListener('click', function(e) {
+        e.preventDefault();                 // empêche le # de changer l’URL
+        collectionItem.classList.toggle('open');
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const collectionItem = document.querySelector('.Collections');
+      const collectionLink = collectionItem.querySelector('a');
+  
+      collectionLink.addEventListener('click', function(e) {
+        e.preventDefault(); // Empêche le lien de recharger la page
+        collectionItem.classList.toggle('open'); // Ajoute ou enlève .open
+      });
+    });
+  </script>
+  
   
 </body>
 </html>

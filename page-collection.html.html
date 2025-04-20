@@ -44,7 +44,13 @@
   <ol class="nameofproduct">
     <li><a href="Achat.html.html">Jean ORIGINS</a></li>
     
- 
+ <!-- MENU BURGER -->
+ <div class="burger" onclick="toggleMenu()">
+  <div class="burger-bar"></div>
+  <div class="burger-bar"></div>
+  <div class="burger-bar"></div>
+</div>
+
 </ol>
 <ol class="price" id="marque">
   <li class="price1">€64.99</li>
@@ -69,6 +75,33 @@
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     form.innerHTML = '<p class="thank-you-message">Merci pour votre inscription ! Vous recevrez bientôt des nouvelles de nos prochaines collections.</p>';
+  });
+</script>
+ <!-- SCRIPT BURGER -->
+ <script>
+  function toggleMenu() {
+    document.querySelector('.nav').classList.toggle('active');
+  }
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Clic sur "Nos collections"
+    const collectionLink = document.querySelector('.Collections > a');
+    collectionLink.addEventListener('click', function(e) {
+      e.preventDefault();                   // empêche l’action par défaut du lien
+      this.parentElement.classList.toggle('open'); // Active/désactive le dropdown
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const collectionItem = document.querySelector('.Collections');
+    const collectionLink = collectionItem.querySelector('a');
+
+    collectionLink.addEventListener('click', function(e) {
+      e.preventDefault();                 // empêche le # de changer l’URL
+      collectionItem.classList.toggle('open');
+    });
   });
 </script>
 </body>

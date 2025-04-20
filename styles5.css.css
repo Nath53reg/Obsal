@@ -201,9 +201,9 @@ body {
 
 /* === FORMULAIRE ET MESSAGE DE REMERCIEMENT === */
 .E-MAIL {
-  margin: 150px;
+  margin: 15px;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .E-MAIL form {
@@ -281,4 +281,189 @@ body {
   left: 630px;
   bottom: 0px;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  .header {
+    width: 100%;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    height: 80px;
+    position: static;
+  }
+
+  /* Burger button */
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 11;
+  }
+
+  .burger-bar {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  /* Navigation */
+  .nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #464646;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex !important;
+  }
+
+  .nav li a {
+    font-size: 22px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .Magasin,
+  .Collections,
+  .Marque,
+  .FAQ {
+    position: static;
+    margin: 10px 0;
+  }
+
+  .Collections .dropdown {
+    display: block;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    margin-top: 10px;
+  }
+
+  .Collections .dropdown li a {
+    color: white;
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  .Collections .dropdown {
+    display: none;
+  }
+  
+  .Collections.open .dropdown {
+    display: block;
+  }
+
+  /* Titre produit */
+  .Title {
+    position: static;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 120px;
+  }
+
+  .Price {
+    position: static;
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .Size2,
+  .Button {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* Section accordéon */
+  .section {
+    width: 90%;
+    margin: 50px auto;
+    text-align: left;
+  }
+
+  .section h3.toggle {
+    font-size: 20px;
+  }
+
+  .section .content {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .section hr {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 10px 0;
+  }
+
+  /* Formulaire */
+  .E-MAIL {
+    margin: 100px 20px;
+  }
+
+  .E-MAIL form {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .E-MAIL input[type="email"],
+  .E-MAIL input[type="submit"] {
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 12px;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .copy {
+    position: static;
+    color: white;
+    margin-top: 10px;
+  }
 }

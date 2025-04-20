@@ -42,7 +42,7 @@
     <h2 class="Title2" id="Magasin2">Origins</h2>
   </div>
 
-  <hr width="800" size="2" color="black">
+  <hr class="hr" width="800" size="2" color="black">
 
   <center>
     <div class="Second">
@@ -55,7 +55,7 @@
       </ol>
     </div>
 
-    <hr width="800" size="2" color="black">
+    <hr class="hr" width="800" size="2" color="black">
 
     <h3>La marque</h3>
     <p class="Pmagasin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque...</p>
@@ -80,6 +80,27 @@
     function toggleMenu() {
       document.querySelector('.nav').classList.toggle('active');
     }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Clic sur "Nos collections"
+      const collectionLink = document.querySelector('.Collections > a');
+      collectionLink.addEventListener('click', function(e) {
+        e.preventDefault();                   // empêche l’action par défaut du lien
+        this.parentElement.classList.toggle('open'); // Active/désactive le dropdown
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const collectionItem = document.querySelector('.Collections');
+      const collectionLink = collectionItem.querySelector('a');
+  
+      collectionLink.addEventListener('click', function(e) {
+        e.preventDefault();                 // empêche le # de changer l’URL
+        collectionItem.classList.toggle('open');
+      });
+    });
   </script>
 
 </body>
