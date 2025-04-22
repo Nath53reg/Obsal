@@ -28,7 +28,7 @@ a:hover {
 .header{
   position: fixed;
   top: 0px;
-  width: 1350px;
+  width: 100%;
   padding: 3px;
 z-index: 1;
    background-color: #464646;

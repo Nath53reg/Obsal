@@ -1,41 +1,110 @@
+/* === IMPORTS & GLOBAL === */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    font-family: Montserrat;
+
+* {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0 auto;
+  padding-top: 100px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 a:hover {
-    text-decoration: underline; /* Sous-ligne l'ancre au survol */
-  }
+  text-decoration: underline;
+}
 
+/* === HEADER (PC) === */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 3px;
+  z-index: 1000;
+  background-color: #464646;
+  height: 100px;
+}
 
-body{
-margin: 0 auto;
+.logo {
+  height: 150px;
+  position: absolute;
+  left: 40px;
+  top: -20px;
 }
-.header{
-    position: fixed;
-    top: 0px;
-    width: 1350px;
-    padding: 3px;
-z-index: 1;
-     background-color: #464646;
-    height: 100px;
-}  
-.logo{
-height: 150px;
-position: absolute;
-left: 40px;
-top: -20px;
+
+.nav {
+  list-style: none;
+  display: flex;
+  color: white;
+  font-size: 20px;
 }
-.nav{
-    list-style:none ;
-    display: flex;
-   color: white;
-   font-size: 20px;
+
+.Magasin {
+  position: absolute;
+  top: 40px;
+  left: 350px;
 }
-/* === BURGER === */
+
+.Collections {
+  position: absolute;
+  top: 40px;
+  left: 550px;
+}
+
+.Collections .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.856);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.Collections:hover .dropdown {
+  display: block;
+}
+
+.Collections .dropdown li a {
+  display: block;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.Collections .dropdown li a:hover {
+  background-color: #5555553f;
+}
+
+.Marque {
+  position: absolute;
+  top: 40px;
+  left: 800px;
+}
+
+.FAQ {
+  position: absolute;
+  top: 40px;
+  left: 1000px;
+}
+
+/* === BURGER BUTTON === */
 .burger {
   display: none;
   flex-direction: column;
@@ -47,8 +116,9 @@ top: -20px;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 15;
+  z-index: 1010;
 }
+
 .burger-bar {
   background-color: white;
   height: 4px;
@@ -56,206 +126,118 @@ top: -20px;
   border-radius: 2px;
 }
 
-.Magasin{
-    position: absolute;
-    top: 40px;
-    left: 350px ;
-    font-size: 20px;  
-}
-.Collections {
-    position: absolute;
-    top: 40px;
-    left: 550px;
-    font-size: 20px;
-  }
-  
-  .Collections .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.856);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 180px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    z-index: 10;
-  }
-  
-  .Collections .dropdown li a {
-    display: block;
-    padding: 12px 16px;
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .Collections .dropdown li a:hover {
-    background-color: #5555553f;
-  }
-  
-  .Collections:hover .dropdown {
-    display: block;
-  }
-.Marque{
-    position: absolute;
-    top: 40px;
-    left: 800px ;
-    font-size: 20px;
-}
-.FAQ{
-    position: absolute;
-    top: 40px;
-    left: 1000px ;
-    font-size: 20px;
+/* === MAIN SECTION === */
+.Title {
+  margin: 150px;
 }
 
-.Title{
-    margin-top: 200px;
-    margin: 150px;
-}
-
-.Second{
-    margin: 150px;
+.Second {
+  margin: 150px;
   height: 50px;
 }
-.nameofproduct{
-    list-style:none ;
-    display: flex;
-   font-size: 20px;
-   justify-content: space-between;
-   margin-top: 350px;
-}
-.price{
-    list-style:none ;
-    display: flex;
-}
-    
-.price1{
-    position: absolute;
-}
-.price2{
-    position: absolute;
-    left: 470px;
-}
-.price3{
-    position: absolute;
-    left: 750px;
-}
-.price4{
-    position: absolute;
-    left: 1030px;
+
+.nameofproduct {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 350px;
+  font-size: 20px;
 }
 
-/* === FORMULAIRE ET MESSAGE DE REMERCIEMENT === */
+.price {
+  list-style: none;
+  display: flex;
+}
+
+.price1 {
+  position: absolute;
+}
+
+/* === FORM === */
 .E-MAIL {
-    margin: 15px;
-    font-size: 20px;
-    text-align: left;
-  }
-  
-  .E-MAIL form {
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    gap: 20px;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #cfcece93;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.1);
-  }
-  
-  .E-MAIL input[type="email"],
-  .E-MAIL input[type="submit"] {
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    width: 100%;
-    max-width: 300px;
-    transition: 0.3s;
-  }
-  
-  .E-MAIL input[type="email"]:focus,
-  .E-MAIL input[type="submit"]:hover {
-    border-color: #333;
-    background-color: #ffffff;
-  }
-  
-  .E-MAIL input[type="submit"] {
-    background-color: #464646;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-size: 16px;
-  
-  }
-  
-  .E-MAIL input[type="submit"]:hover {
-    background-color: #333;
-    transform: scale(1.05);
-  }
-  
-  .E-MAIL input[type="submit"]:active {
-    transform: scale(0.98);
-  }
-  
-  .thank-you-message {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #5c5c5c;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold; 
-    padding: 15px;
-    border-radius: 5px;
-  }
-    .copy{
-       
-        position: absolute;
-        left: 630px;
-        bottom: 0px ;
-        color: white;
-    }
-footer{
-    background-color: #464646;
-    height: 80px;
-    position: relative;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
 }
-/* === MOBILE (≤768px) === */
-@media screen and (max-width: 768px) 
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
 
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
+.E-MAIL form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #cfcece93;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(10, 10, 10, 0.1);
+}
 
+.E-MAIL input[type="email"],
+.E-MAIL input[type="submit"] {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  transition: 0.3s;
+}
+
+.E-MAIL input[type="submit"] {
+  background-color: #464646;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+.E-MAIL input[type="submit"]:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: #464646;
+  height: 80px;
+  position: relative;
+}
+
+.copy {
+  position: absolute;
+  left: 630px;
+  bottom: 0;
+  color: white;
+}
+
+/* === MOBILE VERSION === */
+@media screen and (max-width: 768px) {
   .header {
+    width: 100%;
     padding: 10px 20px;
     height: 80px;
     flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .logo {
     height: 80px;
+    position: absolute;
+    left: 50px;
+    top: 0px;
   }
 
   .burger {
     display: flex;
+    top: 50%;           /* au milieu vertical */
+    right: 20px;        /* 20px depuis le bord droit du header */
+    transform: translateY(-50%);
   }
 
   .nav {
@@ -263,12 +245,12 @@ footer{
     top: 80px;
     left: 0;
     width: 100%;
-    display: none;
     flex-direction: column;
     align-items: center;
     background-color: #464646;
+    display: none;
     padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     z-index: 999;
   }
@@ -282,7 +264,7 @@ footer{
     color: white;
     width: 100%;
     text-align: center;
-    white-space: nowrap;
+    padding: 10px 0;
   }
 
   .Magasin,
@@ -294,34 +276,15 @@ footer{
   }
 
   .Collections .dropdown {
-    display: block;
+    display: none;
     position: static;
     background-color: transparent;
     box-shadow: none;
     margin-top: 10px;
   }
-  .Collections .dropdown {
-    display: none;
-  }
-  .Collections .dropdown {
-    display: none;         /* masqué par défaut */
-    position: static;      /* bien sous le lien, pas en absolute */
-    margin-top: 10px;
-    background-color: transparent;
-    box-shadow: none;
-  }
 
-  .Collections.open .dropdown {
-    display: block;        /* visible quand .open est présent */
-  }
-
-
-  /* Quand .open est ajouté à .Collections, afficher le dropdown */
   .Collections.open .dropdown {
     display: block;
-    margin-top: 10px;
-    background-color: transparent;
-    box-shadow: none;
   }
 
   .Collections .dropdown li a {
@@ -331,21 +294,10 @@ footer{
   }
 
   .Title, .Title2 {
-    position: static;
-    text-align: center;
     font-size: 8vw;
-    padding: 10px;
-  }
-
-  .First {
-    padding: 40px 10px;
-    height: auto;
-  }
-
-  .Second, .Pmagasin {
-    margin: 0 20px;
     text-align: center;
-    font-size: 12px;
+    position: static;
+    padding: 10px;
   }
 
   .nameofproduct,
@@ -355,23 +307,14 @@ footer{
   }
 
   .E-MAIL {
-    width: 100%;
-    padding: 0 5%;
     margin: 100px 0;
+    padding: 0 5%;
   }
 
   .E-MAIL form {
-    width: 100%;
     flex-direction: column;
     gap: 12px;
     padding: 20px;
-  }
-
-  .E-MAIL input[type="email"],
-  .E-MAIL input[type="submit"] {
-    width: 100%;
-    font-size: 16px;
-    box-sizing: border-box;
   }
 
   footer {
@@ -383,11 +326,4 @@ footer{
     position: static;
     margin-top: 10px;
   }
-
-  .hr {
-    border: none;
-    height: 2px;
-    background-color: black;
-    width: 85%;
-    margin: 2px auto;
-  }
+}

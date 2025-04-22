@@ -30,7 +30,6 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: 1350px;
   margin: 0 auto;
   padding: 3px 20px;
   background-color: #464646;
@@ -130,6 +129,9 @@ top: 100px;
 }
 .E-MAIL p {
   margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #333;
   font-weight: bold;
 }
 .E-MAIL form {
@@ -291,6 +293,7 @@ footer {
     margin: 20px;
     font-size: 8vw;
     text-align: center;
+     }
 
   
   .h3 {
@@ -316,4 +319,3 @@ footer {
     position: static;
     margin-top: 10px;
   }
-}
