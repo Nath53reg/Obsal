@@ -68,51 +68,25 @@
   </div>
 
 
+  <!-- NEWSLETTER -->
   <div class="E-MAIL">
     <p>NEWSLETTER WITH YOUR E-MAIL FOR NEXT DROP JUST HERE.</p>
     <form
-  action="https://formspree.io/f/xjkyzdqw"
+  action="https://formspree.io/f/xqapvnoy"
   method="POST"
 >
-      <input type="email" name="email" placeholder="Votre E-MAIL" required>
-      <br>
-      <input type="submit" value="Envoyer">
+      <input type="email" name="email" placeholder="Votre E-MAIL" required />
+      <input type="submit" value="Envoyer" />
     </form>
   </div>
-  
-  <script>
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      form.innerHTML = '<p class="thank-you-message">Merci pour votre inscription ! Vous recevrez bientôt des nouvelles de nos prochaines collections.</p>';
-    });
-  </script>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p class="copy">© 2025, Obsal</p>
   </footer>
+
+  <!-- SCRIPT BURGER -->
   <script>
-    document.querySelectorAll('.toggle').forEach(titre => {
-      titre.addEventListener('click', () => {
-        const content = titre.nextElementSibling;
-        content.classList.toggle('show');
-      });
-    });
-  </script>
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav').classList.toggle('active');
-    }
-  
-    document.addEventListener('DOMContentLoaded', function () {
-      const collectionLink = document.querySelector('.Collections > a');
-      collectionLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        this.parentElement.classList.toggle('open');
-      });
-    });
-  </script>
-   <script>
     function toggleMenu() {
       document.querySelector('.nav').classList.toggle('active');
     }
@@ -135,17 +109,6 @@
       collectionLink.addEventListener('click', function(e) {
         e.preventDefault();                 // empêche le # de changer l’URL
         collectionItem.classList.toggle('open');
-      });
-    });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const collectionItem = document.querySelector('.Collections');
-      const collectionLink = collectionItem.querySelector('a');
-  
-      collectionLink.addEventListener('click', function(e) {
-        e.preventDefault(); // Empêche le lien de recharger la page
-        collectionItem.classList.toggle('open'); // Ajoute ou enlève .open
       });
     });
   </script>

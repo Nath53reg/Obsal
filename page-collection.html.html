@@ -58,27 +58,25 @@
 </ol>
 </div>
  
+<!-- NEWSLETTER -->
 <div class="E-MAIL">
   <p>NEWSLETTER WITH YOUR E-MAIL FOR NEXT DROP JUST HERE.</p>
   <form
-  action="https://formspree.io/f/xjkyzdqw"
-  method="POST"
+action="https://formspree.io/f/xqapvnoy"
+method="POST"
 >
-    <input type="email" name="email" placeholder="Votre E-MAIL" required>
-    <br>
-    <input type="submit" value="Envoyer">
+    <input type="email" name="email" placeholder="Votre E-MAIL" required />
+    <input type="submit" value="Envoyer" />
   </form>
 </div>
 
+<!-- FOOTER -->
+<footer class="footer">
+  <p class="copy">© 2025, Obsal</p>
+</footer>
+
+<!-- SCRIPT BURGER -->
 <script>
-  const form = document.querySelector('form');
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    form.innerHTML = '<p class="thank-you-message">Merci pour votre inscription ! Vous recevrez bientôt des nouvelles de nos prochaines collections.</p>';
-  });
-</script>
- <!-- SCRIPT BURGER -->
- <script>
   function toggleMenu() {
     document.querySelector('.nav').classList.toggle('active');
   }
